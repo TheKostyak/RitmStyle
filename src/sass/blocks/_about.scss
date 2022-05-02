@@ -1,0 +1,73 @@
+    // .about {
+    //     min-height: 1000px;
+    //     &__wrapper {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: center;
+    //     }
+    //     &__item {
+    //         margin-top: 100px;
+    //         width: 1076px;
+    //         display: flex;
+    //         justify-content: space-between;
+    //         color: #fff;
+    //         &_image {
+    //             width: 526px;
+    //             height: 365px;
+    //             background: url("../img/about_bg.jpg") center center/cover no-repeat;
+    //             border-radius: 10px;
+    //         }
+    //         &_text {
+    //             width: 466px;
+    //         }
+    //         &_title {
+    //             font-weight: 700;
+    //             font-size: 24px;
+    //         }
+    //         &_descr {
+    //             margin-top: 30px;
+    //             font-weight: 300;
+    //             font-size: 16px;
+    //         }
+    //         span {
+    //             display: block;
+    //             margin-top: 20px;
+    //         }
+    //     }
+    // }
+    .about {
+        &__wrapper {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 526px);
+            grid-template-rows: repeat(2, 365px);
+            grid-gap: 100px;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        &__item {
+            &_image {
+                width: 100%;
+                height: 100%;
+                background: url("../img/about_bg.jpg") center center/cover no-repeat;
+                border-radius: 10px;
+            }
+            &_text {
+                width: 466px;
+            }
+            &_title {
+                font-weight: 700;
+                font-size: 24px;
+            }
+            &_descr {
+                margin-top: 30px;
+                font-weight: 300;
+                font-size: 16px;
+            }
+            span {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }

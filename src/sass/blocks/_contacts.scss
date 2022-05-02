@@ -1,0 +1,60 @@
+.contacts {
+    min-height: 700px;
+    &__wrapper {
+        width: 1296px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 150px auto;
+    }
+    &__map {
+        height: 604px;
+        iframe {
+            width: 856px;
+            height: 100%;
+            border: none;
+        }
+    }
+    &__address {
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+    .address__item {
+        height: 290px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: $light-blue;
+        border-radius: 10px;
+        padding: 35px 45px;
+        &_text {
+            display: flex;
+        }
+        &_descr {
+            margin-left: 20px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &_btn {
+            width: 155px;
+            height: 36px;
+            background-color: #FFFFFF;
+            border: none;
+            color: $light-blue;
+            border-radius: 3px;
+            padding: 9px 15px;
+            color: $light-blue;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+}

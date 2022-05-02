@@ -1,0 +1,28 @@
+.promo {
+    &__wrapper {
+        width: 1296px;
+        margin: 0 auto;
+        background: url('../img/first-screen.jpg') center (center / cover) no-repeat;
+        height: 600px;
+        border-radius: 10px;
+    }
+    color: #fff;
+    margin: 0 auto;
+    min-height: 600px;
+    margin-top: 70px;
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 140%;
+        margin-top: 40px;
+    }
+    &_title {
+        &::before,
+        &::after {
+            background-color: #fff;
+        }
+        padding-top: 130px;
+        margin: 0;
+    }
+}

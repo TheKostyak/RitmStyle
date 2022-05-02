@@ -1,0 +1,44 @@
+.seance {
+    min-height: 700px;
+    margin-top: 150px;
+    .seance__wrapper {
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: repeat(2, 258px);
+        grid-template-columns: repeat(3, 416px);
+        grid-gap: 24px;
+        justify-content: center;
+        .item_vertical {
+            position: relative;
+            grid-row: 1/4;
+            height: 540px;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 7px;
+                background-color: $light-blue;
+                bottom: 0;
+                border-radius: 0px 0px 10px 10px;
+            }
+            .seance__item_text {
+                bottom: 50px;
+                left: 50px;
+            }
+        }
+    }
+    .seance__item {
+        position: relative;
+        height: 258px;
+        border-radius: 10px;
+        background: url("../img/seance_bg.jpg") center center/cover no-repeat;
+        &_text {
+            position: absolute;
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+            bottom: 30px;
+            left: 30px;
+        }
+    }
+}

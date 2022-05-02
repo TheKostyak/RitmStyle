@@ -1,0 +1,52 @@
+@import 'base/variables';
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+* {
+    font-family: 'Akshar', sans-serif;
+}
+
+body {
+    background-color: $background;
+}
+
+h2 {
+    margin-top: 150px;
+    padding: 0 66px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 14px;
+        margin-left: 66px;
+        background-color: $light-blue;
+        border-radius: 0px 50px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 14px;
+        margin-right: 66px;
+        background-color: $light-blue;
+        border-radius: 0px 50px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/seance';
+@import 'blocks/feedback';
+@import 'blocks/about';
+@import 'blocks/cost';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/media';
